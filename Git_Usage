@@ -1,0 +1,27 @@
+git init
+
+# add a new file
+git add 
+
+git commit -m 'revise notice'
+
+git status
+
+git diff
+
+git log
+# use this command to see what have done to the file.
+
+# to see the historic log in a concrete version,use
+git log --pretty=oneline
+
+git reset --hard HEAD^
+# use this command to get back to the last version
+
+# and also,you can use the command above and replace 'head' with 
+# commit ID you can back to specific version
+
+git relog
+# use this command to see the command history
+
+
