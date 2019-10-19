@@ -24,4 +24,35 @@ git reset --hard HEAD^
 git relog
 # use this command to see the command history
 
+git checkout -- filename
+# use this command to retrieve the last revision.
+
+git reset HEAD filename
+# pull back the file which has been sent to stage
+
+# create a new branch and switch to this branch
+git checkout -b dev
+
+# check out all the branch we have
+git branch
+
+# in the branch 'dev',all the file revision will not show in branch master.
+# until we merge the work on 'dev' to branch master.
+git merge dev
+
+# after merging,we can safely delete the branch 'dev'.
+git branch -d dev
+
+#again check out all the branch,we only get branch master left.
+
+## in the new version of git
+# we can use 
+git switch -c dev
+# to create and switch to the new branch
+
+# and switch to the existing branch,we may use
+git switch master
+
+# Obviously, this 'switch'can is much clear and understandable than 'checkout'
+
 
